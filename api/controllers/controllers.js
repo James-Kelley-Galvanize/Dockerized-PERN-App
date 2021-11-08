@@ -3,7 +3,7 @@ const { db } = require("./dbConnection");
 function getDbResponse() {
   return db
     .select("*")
-    .from("table")
+    .from("cats")
     .then((data) => data);
 }
 
